@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   flex-direction: column;
@@ -17,13 +18,12 @@ main {
   color: white;
   cursor: pointer;
   font-size: 16px;
-  /* 8px en top y bottom, 12px right y left */
   padding: 8px 12px;
   text-decoration: none;
-  /* Arrancar de derecha y se va ir hacia la izquierda, colores degradado*/
   background: linear-gradient(to left, #8a4b0c, #dd944c);
  
 }
+
 label {
   margin-top: 10px;
 }
@@ -63,7 +63,7 @@ input[type='checkbox']:checked:after {
 
 .contenedor {
   position: relative;
-  width: 800px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -93,12 +93,14 @@ input[type='checkbox']:checked:after {
 
 .cafes {
   color: #412B19;
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: -60px;
 }
 .cafes h2 {
   font-family: 'Montserrat', sans-serif; 
   font-size: 35px;
 }
+
 .portada {
   background-image: url('../img/background.jpg');
   background-size: cover;
@@ -147,6 +149,8 @@ input[type='checkbox']:checked:after {
 .cafe {
   padding: 10px;
   margin: 10px 10px 40px 10px;
+  /* border: 1px solid #412B19; */
+ /* overflow: hidden;  para que no desborden nuestras imagenes*/
   border-radius: 8px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
@@ -167,7 +171,7 @@ input[type='checkbox']:checked:after {
 .left {
   float: left;
   position: relative;
-
+  top: -110px;
 }
 
 
@@ -199,6 +203,7 @@ input[type='checkbox']:checked:after {
 .contacto a {
   color: white;
   text-decoration: none;
+  /*TOP, RIGHT BOTTOM, LEFT*/
   margin: 10px 10px 10px 0;
 }
 
@@ -211,7 +216,16 @@ input[type='checkbox']:checked:after {
   display: flex;
   color: white;
   width: 430px;
+  /* padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 50px; */
+
+  /* padding: 50px 10px;  */
 }
+/* Esto es un comentario*/
+/* vamos darle estilos a las clases col1 y col2 */
+
 .col1, .col2 {
   display: flex;
   flex-direction: column;
@@ -245,7 +259,7 @@ input[type='checkbox']:checked:after {
 /* Tablas */
 
 table {
-  width: 100%;
+  width: 100%; /* toma el 100% de tu padre contenedor que tiene los 800px */
   margin-bottom: 60px;
 }
 
@@ -262,6 +276,8 @@ td {
 table, td, th {
   font-size: 20px;
   border: 0;
+  /* border: 1px solid #C29B61;
+  border-collapse: collapse; */
 }
 i {
   font-size: 12px;
@@ -289,3 +305,5 @@ i {
 .tabla {
   margin: 50px 0;
 }
+
+/* Tablas */

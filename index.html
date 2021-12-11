@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cafeteria - los mejores Cafe times</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Montserrat&family=Pacifico:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="shortcut icon" href="img/favicon.ico">
+  
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
+  <!-- header -->
+  <!-- estilos en linea <header style="background: brown;"></header> -->
+
 
   <section id="portada" class="portada">
+    <!-- portada -->
     <header id="header" class="header contenedor">
+
       <figure class="logotipo">
+        <!-- logotipo -->
+        <!-- <img src="img/logo.png" width="60" alt="logo cafe" /> -->
         <span>CafeTime</span>
       </figure>
 
-      <nav class="menu">
+      <span id="burguer-button" class="burguer-button">
+        <i class="fas fa-bars"></i>
+      </span>
+      
+      <nav id="menu" class="menu">
+        <!-- menu -->
+        <!-- ul es una lista desordenada -->
+        <!-- ol es una lista ordenada -->
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#cafes">Cafes</a></li>
@@ -31,19 +51,21 @@
 
     <div class="contenedor">
       <h1 class="titulo">CafeTime Saborint</h1>
+      <!--titulo-->
       <h3 class="title-a">El mejor cafe intenso para momentos especiales</h3>
-
+      <!--Botón-->
+      <!-- <button class="button">Conoce mas</button> -->
       <a class="button" href="#cafes">Conoce mas</a>
     </div>
 
   </section>
 
   <section id="cafes" class="cafes contenedor">
-
-    <h2>Nuestros cafes</h2> 
+    <!-- cafes -->
+    <h2>Nuestros cafes</h2> <!-- titulo -->
 
     <article class="cafe granoscafe">
-
+      <!-- cafe 1-->
       <img class="right" src="img/cafetime.png" width="350" alt="cafe expresso" />
 
       <div class="contenedor-cafe-a">
@@ -58,7 +80,7 @@
     </article>
 
     <article class="cafe granoscafe">
-
+      <!-- cafe 2-->
       <img class="left" src="img/cafetimegranos.png" width="350" alt="granos de cafe" />
 
       <div class="contenedor-cafe-b">
@@ -80,7 +102,7 @@
       <div class="contacto">
         <img src="img/imagenfooter.png" alt="imagen footer" width="300" />
   
-        <a href="tel:+569954587415"> <strong>Teléfono</strong> <span>9545874</span></a>
+        <a href="tel:+569954587415"> <strong>Teléfono</strong> <span>9545555</span></a>
   
         <a href="mailto:contacto@cafetime.cl"> <strong>E-mail</strong> <span>contacto@cafetime.cl</span> </a>
       </div>
@@ -136,7 +158,7 @@
     </div>
   
   </footer>
-
+<script src="js/menu.js"></script>
 </body>
 
 </html>
